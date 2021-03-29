@@ -20,7 +20,7 @@ public class StepSearchFormTest {
     @Story("Menu Issue")
     @DisplayName("Check menu 'Issue' in repository")
     @Severity(SeverityLevel.BLOCKER)
-    @Link(name="BaseURL", url="https://github.com")
+    @Link(name="Checked URL", url="https://github.com")
 
     @Test
     public void SearchIssueTabTest(){

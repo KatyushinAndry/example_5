@@ -7,7 +7,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import page.SearchFormPage;
 
-public class SeleninSearchFormTest {
+public class SelenidSearchFormTest {
 
     SearchFormPage searchFormPage=new SearchFormPage();
 
@@ -20,7 +20,7 @@ public class SeleninSearchFormTest {
     @Story("Menu Issue")
     @DisplayName("Check menu 'Issue' in repository")
     @Severity(SeverityLevel.BLOCKER)
-    @Link(name="BaseURL", url="https://github.com")
+    @Link(name="Checked URL", url="https://github.com")
     @Test
     void SearchIssueTabTest(){
         searchFormPage
