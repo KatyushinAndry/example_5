@@ -9,21 +9,21 @@ import page.StepsSearchFormPage;
 
 public class StepSearchFormTest {
 
-    private StepsSearchFormPage steps=new StepsSearchFormPage();
+    private StepsSearchFormPage steps = new StepsSearchFormPage();
 
     @BeforeAll
-    static void setup(){
-        Configuration.startMaximized=true;
+    static void setup() {
+        Configuration.startMaximized = true;
     }
 
     @Owner("a.katyushin")
     @Story("Menu Issue")
     @DisplayName("Check menu 'Issue' in repository")
     @Severity(SeverityLevel.BLOCKER)
-    @Link(name="Checked URL", url="https://github.com")
+    @Link(name = "Checked URL", url = "https://github.com")
 
     @Test
-    public void SearchIssueTabTest(){
+    public void SearchIssueTabTest() {
         steps.openPage();
         steps.fillSearchData();
         steps.openRepository();

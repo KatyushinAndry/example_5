@@ -9,20 +9,20 @@ import page.SearchFormPage;
 
 public class SelenidSearchFormTest {
 
-    SearchFormPage searchFormPage=new SearchFormPage();
+    SearchFormPage searchFormPage = new SearchFormPage();
 
     @BeforeAll
-    static void setup(){
-        Configuration.startMaximized=true;
+    static void setup() {
+        Configuration.startMaximized = true;
     }
 
     @Owner("a.katyushin")
     @Story("Menu Issue")
     @DisplayName("Check menu 'Issue' in repository")
     @Severity(SeverityLevel.BLOCKER)
-    @Link(name="Checked URL", url="https://github.com")
+    @Link(name = "Checked URL", url = "https://github.com")
     @Test
-    void SearchIssueTabTest(){
+    void SearchIssueTabTest() {
         searchFormPage
                 .openPage()
                 .fillSearchData()
